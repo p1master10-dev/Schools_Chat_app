@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title id="titleSet"></title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+
+       <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+       <link rel="stylesheet" href="kwitter_page.css">
+    </head>
+    <body>
+        <center>
+            <div id="upper_part">
+                 <h1 id="room_name_show"></h1>
+                 <button id="goBack" onclick="goBack()" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-home"></span> Go back</button>
+            </div>
+
+            <div id="msg_part"><hr></div>
+
+            <div id="lower_part">
+                    <label id="info">Message Here : </label>
+                <span>  <input id="msg" placeholder="Write Your Message" type="text">  </span>
+                <span>  <button id="send" onclick="send()" class="btn btn-success"><span class="glyphicon glyphicon-send"></span> Send</button>  </span>
+            </div>
+        </center>
+        <script src="kwitter_page.js"></script>
+    </body>
+</html>

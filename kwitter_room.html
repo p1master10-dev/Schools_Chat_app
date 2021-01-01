@@ -1,0 +1,69 @@
+<html>
+    <head>
+       <title>Kwitter 2</title>
+
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+
+       <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+
+       <link rel="stylesheet" href="kwitter_room.css">
+       <script src="kwitter_room.js"></script>
+       </head>
+    <body>
+        <center>
+            <div class="container" id="part1">
+                <center>
+                   <h2 id="str_txt">Kwitter 2  <span> <img src="Kwitter 2.jpg" id="str_img"></span></h2>    <span><button id="log_out" onclick="logOut()" class="btn btn-danger btn-lg" title="Are You Sure ?"><span class="glyphicon glyphicon-log-out"></span>    Log Out</button></span><script src="kwitter_room.js"></script>
+                   <br>
+                </center>
+            </div>
+            <br>
+
+            <br>
+            <h3 id="back"></h3>
+            <div class="container" id="part2">
+                <center>
+                    <div id="create_room">
+                        <br>
+                        <h3 style="font-family: 'Russo One', sans-serif;">Create Room : </h3>
+                        <h4 class="text-danger" style="font-weight: 800;">Note : <span style="color: black;">Your Room Name Should Be Maximum 30 letters</span></h4>
+                        <br>
+                        <input type="text" id="room_name" placeholder="Write Your Room Name">
+                        <br>
+                        <span><h4 style="display: inline-block; margin-right: 10px; font-family: 'Russo One', sans-serif; line-height: 50px;">Mark As Teachers Room</h4></span>
+                        <input type="checkbox" id="teacher_check" title="Click It If You Are A TEACHER">
+                        <br>
+                        <button type="button" id="create" onclick="createRoom()" class="btn btn-success" title="Click It To create A room"><span class="glyphicon glyphicon-plus-sign"></span>  Create</button>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div id="join_room" class="container" class="col-lg-8 col-md-6 col-sm-4 col-xs-2">
+                        <br>
+                        <h3 style="font-family: 'Russo One', sans-serif;">Join Room : </h3>
+                        <h4 style="font-weight: 850; color: black;">You Can join others' room : </h4>
+                        <div id="join_room_names"></div>
+                        <br>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </center>
+            </div>
+        </center>
+    </body>
+</html>

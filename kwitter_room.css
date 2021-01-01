@@ -1,0 +1,79 @@
+#str_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+#part1{
+    background-color: peachpuff;
+    border-radius: 20px;
+    border: solid;
+    border-color: peachpuff;
+    opacity: 95%;
+    margin-top: 10px;
+}
+
+#str_txt{
+    font-size: 45px;
+    font-family: 'Russo One', sans-serif;
+    color: black;
+    display: inline-block;
+    margin-right: 150px;
+    margin-left: 300px;
+}
+
+#create_room{
+    background-color: wheat;
+    border-radius: 20px;
+    width: 700px;
+}
+
+#join_room_names{
+    background: white;
+    border-radius: 10px;
+    border-top: 10px solid rebeccapurple;
+    padding: 10px;
+    float: none;
+    text-align: left;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#join_room{
+    background-color: wheat;
+    width: 700px;
+    border-radius: 20px;
+}
+
+#room_name{
+    width: 475px;
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#room_name:focus{
+    box-shadow: 2px 2px 15px lightslategrey;
+    outline: transparent;
+}
+
+#create{
+    margin-bottom: 10px;
+}
+
+#log_out{
+    margin-bottom: 30px;
+}
+
+body{
+    background-color: burlywood;
+}
+
+#teacher_check{
+    width: 15px;
+    height: 15px;
+    background-color: pink;
+}
